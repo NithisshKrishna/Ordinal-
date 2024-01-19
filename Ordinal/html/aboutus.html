@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" />
+  <link rel="stylesheet" href="./style1.css" />
+  <title>Meditation App by Eduardo Migueis</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
+    integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog=="
+    crossorigin="anonymous" />
+  <!-- <meta charset="utf-8" /> -->
+	
+		<link rel="stylesheet" type="text/css" href="css/style.css">
+		<link rel="stylesheet" href="css/bootstrap.min.css">
+		<link rel="stylesheet" href="css/sidebar.css">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+		
+		<link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet' type='text/css'>
+		<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,700' rel='stylesheet' type='text/css'>
+		
+		<link rel='shortcut icon' type='image/x-icon' href='favicon.ico' />
+		
+		<script src="js/jquery-1.11.3.min.js"></script>
+		<script src="js/bootstrap.min.js"></script>
+		<script src="js/jPushMenu.js"></script>
+		<script src="js/counter.js"></script>
+		<script src="js/jquery.scrollUp.min.js"></script>
+		
+		<script type="text/javascript">
+			$(window).load(function() {
+				$(".loader").fadeOut("slow");
+			})
+		</script>
+		
+		<!-- <meta name="viewport" content="width=device-width, initial-scale=6"> -->
+</head>
+
+
+
+<body>
+
+  <header>
+
+    <nav class="navbar-default navbar-static-top" id="navbar-default" style="border-radius:0;">
+      <div class="container">
+        <div class="navbar-header">
+                        <button type="button" class="navbar-toggle toggle-menu menu-left push-body" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                            <span class="sr-only">Toggle navigation</span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span></button>
+                            <a class="navbar-brand" href=""></a>
+                    </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse cbp-spmenu cbp-spmenu-vertical cbp-spmenu-left"
+          id="bs-example-navbar-collapse-1">
+
+          <ul class="nav navbar-nav">
+            <li><a href="index1.html"><span>Home</span></a></li>
+            <li><a href="Heal.html">Heal</a></li>
+            <li><a href="self.html">Self-Improvement</a></li>
+            <li><a href="index.html">Mood Tracker</a></li>
+            <li><a href="helpline.html">Helpline</a></li>
+            <li><a href="aboutus.html">About Us</a></li>
+
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <div class="container">
+      <ul class="breadcrumb">
+        <li><a href="index.html">Home</a> <span class="divider">/</span></li>
+        <li class="active">Home</li>
+      </ul>
+    </div>
+
+    <style>
+      .navbar-default {
+        background: #ffffff;
+      }
+
+      .navbar-default .navbar-nav li a {
+        color: #000;
+      }
+
+      .navbar-default .navbar-toggle .icon-bar {
+        background: #000;
+      }
+
+      .navbar-nav {
+        float: right;
+      }
+
+      @media screen and (max-width: 768px) {
+        .navbar-nav {
+          float: left;
+        }
+      }
+    </style>
+
+
+  </header>
+
+
+  
+
+    <div class="wrapper">
+      <img id="mainBg" class="bg" src="./images/bg.jpg" alt="" />
+      <video id="stage-video" src="" muted autoplay loop></video>
+      <div class="top-portion-wrapper">
+        <div class="inner-main">
+          <div class="animation">
+            <div class="watch-face">
+              <div class="circle"></div>
+              <div class="circle"></div>
+              <div class="circle"></div>
+              <div class="circle"></div>
+              <div class="circle"></div>
+              <div class="circle"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="bottom-bar">
+        <button class="audio-btn muted" id="switch-audio">
+          <i class="fas fa-volume-mute"></i>
+          <i class="fas fa-volume-up"></i>
+        </button>
+        <button class="audio-btn" id="random-audio">
+          <i class="fas fa-random"></i>
+        </button>
+
+        <button id="toggle-video">
+          <i class="fas fa-video"></i>
+          <i class="fas fa-video-slash none"></i>
+        </button>
+
+        <div class="dp-trigger">
+          <div class="dropdown">
+            <ul>
+              <li>
+                <button>
+                  <a href="https://github.com/edumigueis/meditation-app" target="_blank" rel="noopener noreferrer"><i
+                      class="fab fa-github"></i></a>
+                </button>
+              </li>
+              <li>
+                <button id="config-btn"><i class="fas fa-cog"></i></button>
+              </li>
+            </ul>
+          </div>
+          <button>
+            <i class="fas fa-ellipsis-h"></i>
+          </button>
+        </div>
+      </div>
+      <div class="poses" id="poses">
+        <div class="current pose">
+          <img src="./images/yoga1.png" alt="" />
+        </div>
+        <div class="pose">
+          <img src="./images/yoga2.png" alt="" />
+        </div>
+        <div class="pose">
+          <img src="./images/yoga3.png" alt="" />
+        </div>
+        <div class="pose">
+          <img src="./images/yoga4.png" alt="" />
+        </div>
+        <div class="pose">
+          <img src="./images/yoga5.png" alt="" />
+        </div>
+      </div>
+    </div>
+
+    <div class="modal-wrapper" id="config-md">
+      <div class="modal">
+        <div class="part">
+          <p class="title">Theme</p>
+          <div class="swatches">
+            <div class="swatch active" data-theme="0" style="background-color: #70dfbd"></div>
+            <div class="swatch" data-theme="1" style="background-color: #64aec4"></div>
+            <div class="swatch" data-theme="8" style="background-color: #3d6bcf"></div>
+            <div class="swatch" data-theme="2" style="background-color: #a2df70"></div>
+            <div class="swatch" data-theme="3" style="background-color: #70addf"></div>
+            <div class="swatch" data-theme="4" style="background-color: #bd31f5"></div>
+            <div class="swatch" data-theme="5" style="background-color: #eb59f0"></div>
+            <div class="swatch" data-theme="6" style="background-color: #e6b737"></div>
+            <div class="swatch" data-theme="7" style="background-color: #e68637"></div>
+          </div>
+        </div>
+        <div class="part flex">
+          <p class="title">Yoga Poses</p>
+          <div class="toggle-wrapper">
+            <input type="checkbox" id="toggly" />
+            <label for="toggly"><i></i></label>
+          </div>
+        </div>
+        <div class="part">
+          <p class="title">Background</p>
+          <div class="backgrounds">
+            <input type="file" id="imgupload" style="display: none" accept="image/*" onchange="openFile(event)" />
+            <div class="back">
+              <img src="./images/bg.jpg" alt="" id="OpenImgUpload" />
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+    <script src="app.js"></script>
+  </body>
+
+</html>

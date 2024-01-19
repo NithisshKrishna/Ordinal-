@@ -1,0 +1,493 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <title>Heal</title>
+    
+    <meta charset="utf-8" />
+
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/sidebar.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+	<link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,700' rel='stylesheet' type='text/css'>
+	
+	<link rel='shortcut icon' type='image/x-icon' href='favicon.ico' />
+	
+    <script src="js/jquery-1.11.3.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jPushMenu.js"></script>
+    <script src="js/jquery.scrollUp.min.js"></script>
+    
+    <script type="text/javascript">
+		$(window).load(function() {
+			$(".loader").fadeOut("slow");
+		})
+	</script>
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+</head>
+
+<body>
+
+	<div class="loader"></div>
+	
+	<style>
+	
+	.loader {
+	position: fixed;
+	left: 0px;
+	top: 0px;
+	width: 100%;
+	height: 100%;
+	z-index: 9999;
+	background: url('images/page-loader.gif') 50% 50% no-repeat rgb(249,249,249);
+	}
+	
+	</style>
+	
+	<header>   
+        <nav class="navbar-default navbar-static-top" id="navbar-default" style="border-radius:0;">
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle toggle-menu menu-left push-body" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                        <a class="navbar-brand" href="index.html"></a>
+                </div>
+
+                <!-- Collect the nav links, forms, and other content for toggling -->
+                <div class="collapse navbar-collapse cbp-spmenu cbp-spmenu-vertical cbp-spmenu-left" id="bs-example-navbar-collapse-1">
+
+                    <ul class="nav navbar-nav">
+                        <li><a href="index1.html">Home</a></li>
+                        <li><a href="Heal.html"><span>Heal</span></a></li>
+                        <li><a href="self.html">Self-Improvement</a></li>
+                        <li><a href="index.html">Mood Tracker</a></li>
+                        <li><a href="helpline.html">Helpline</a></li>
+						<li><a href="aboutus.html">About Us</a></li>
+
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    
+        
+
+        
+    </header>
+    
+    
+    <div class="container">
+    	<ul class="breadcrumb">
+  			<li><a href="index1.html">Home</a> <span class="divider">/</span></li>
+  			<li class="active">Heal</li>
+		</ul>
+	</div> 
+
+    <div class="pricing-table">
+    	<div class="container">
+    		<div class="table">
+    			<div class="col-md-4 col-sm-4">
+    				<div class="block">
+    					<div class="cost">
+    						<h3>Domestic Violence</h3>
+    	
+    						<p>Domestic abuse, also called "domestic violence" or "intimate partner violence", can be defined as a pattern of behavior in any relationship that is used to gain or maintain power and control over an intimate partner. Abuse is physical, sexual, emotional, economic or psychological actions or threats of actions that influence another person. This includes any behaviors that frighten, intimidate, terrorize, manipulate, hurt, humiliate, blame, injure, or wound someone. Domestic abuse can happen to anyone of any race, age, sexual orientation, religion, or gender. It can occur within a range of relationships including couples who are married, living together or dating. Domestic violence affects people of all socioeconomic backgrounds and education levels. 
+
+								Anyone can be a victim of domestic violence, regardless of age, race, gender, sexual orientation, faith or class
+								
+								Victims of domestic abuse may also include a child or other relative.</p>
+    					</div>
+    				
+    					<div class="info">
+    						<ul class="item-list">
+    
+    							
+    						<!--<li><a href="#"><button type="button">Open</button></a></li> -->
+								<br>
+							    <audio src="audio.mp3" id="myAudio"></audio> 
+								<button onClick="TamilDAaudio()">Tamil</button>
+								
+								<script>
+								
+								var myAudio = document.getElementById("myAudio");
+								function TamilDAaudio(){
+									if(myAudio.paused){
+										myAudio.play();
+									}else{
+										myAudio.pause();
+									}
+								}
+								</script> &nbsp; &nbsp; &nbsp; &nbsp;
+
+								<audio src="EnglishDA.mp3" id="eng"></audio>
+								<button onClick="EngDAaudio()">English</button>
+								<script>
+								var eng = document.getElementById("eng");
+								function EngDAaudio(){
+									if(eng.paused){
+										eng.play();
+									}else{
+										eng.pause();
+									}
+								  }
+								</script> &nbsp; &nbsp; &nbsp; &nbsp;
+
+								<audio src="HindiDA.mp3" id="hindi"></audio>
+								<button onClick="HindiDAAudio()">Hindi</button>
+								<script>
+								  var hindi = document.getElementById("hindi");
+								function HindiDAAudio(){
+									if(hindi.paused){
+										hindi.play();
+									}else{
+										hindi.pause();
+									}
+								}	
+								</script> &nbsp; &nbsp; &nbsp; &nbsp;
+
+    						</ul>
+    					</div>
+    				</div>
+    			</div>
+				<div class="col-md-4 col-sm-4">
+    				<div class="block">
+    					<div class="cost">
+    						<h3>Self Harm</h3>
+    	
+    						<p>Self-harm is defined as the act of someone hurting themselves intentionally. Often people who self-harm won’t tell their family or friends and will harm themselves in places that they can cover up.
+
+								Most people who self-harm are not attempting suicide. Self-harm is also referred to as non-suicidal self-injury (NSSI). However self-harm can cause more damage to someone's health and safety than they may have intended and can also cause accidental suicide. Some people who self-harm may only do so on
+								Some people are more likely to self-harm than others. The chance of someone self-harming can increase if they have experienced or are experiencing physical, emotional or sexual abuse, or are living with a mental illness. Someone may also self-harm because of the death of a loved one, because they experience pain, such as bullying, or loss such as miscarriage, or because they experience extreme sadness or anger.</p>
+    					</div>
+    				
+    					<div class="info">
+    						<ul class="item-list">
+    
+    							
+    						<!--<li><a href="#"><button type="button">Open</button></a></li> -->
+								<br>
+							    <audio src="TamilSH.mp3" id="tamilsh"></audio> 
+								<button onClick="selfharmtamil()">Tamil</button>
+								<script>
+								  var tamilsh = document.getElementById("tamilsh");
+								function selfharmtamil(){
+									if(tamilsh.paused){
+										tamilsh.play();
+									}else{
+										tamilsh.pause();
+									}
+								  }
+								</script> &nbsp; &nbsp; &nbsp; &nbsp;
+
+								<audio src="SHenglish.mp3" id="englishsh"></audio>
+								<button onClick="selfharmenglish()">English</button>
+								<script>
+								  var englishsh = document.getElementById("englishsh");
+								function selfharmenglish(){
+									if(englishsh.paused){
+										englishsh.play();
+									}else{
+										englishsh.pause();
+									}
+								  }
+								</script> &nbsp; &nbsp; &nbsp; &nbsp;
+
+								<audio src="HindiSH.mp3" id="hindish"></audio>
+								<button onClick="selfharmhindi()">Hindi</button>
+								<script>
+								  var hindish = document.getElementById("hindish");
+								function selfharmhindi(){
+									if(hindish.paused){
+										hindish.play();
+									}else{
+										hindish.pause();
+									}
+								  }
+								</script> &nbsp; &nbsp; &nbsp; &nbsp;
+
+    						</ul>
+    					</div>
+    				</div>
+    			</div>
+				<div class="col-md-4 col-sm-4">
+    				<div class="block">
+    					<div class="cost">
+    						<h3>Anxiety</h3>
+    	
+    						<p>All of us worry and get scared from time to time. But those with anxiety may feel consumed by fears of things that might seem irrational to others. It can be hard to relate to these concerns, and as a result, many people don’t know how to best help someone with anxiety. 
+
+								“People are often dismissive of people experiencing anxiety,” says Joseph McGuire, Ph.D., a pediatric psychologist with Johns Hopkins Medicine. “With other medical illnesses, you may be able to see physical symptoms. But with anxiety, you don’t necessarily see what the person is dealing with. So it’s important to be sensitive to what the person with anxiety is going through, even if it doesn’t make sense to you.” 
+								
+								It’s distressing to watch a loved one experience panic attacks and face anxiety every day, but there are things you can do to help. It starts with recognizing the signs of excessive worry and understanding the best ways to support your loved one.</p>
+    					</div>
+    				
+    					<div class="info">
+    						<ul class="item-list">
+    
+    							
+    						<!--<li><a href="#"><button type="button">Open</button></a></li> -->
+								<br>
+							    <audio src="TamilAN.mp3" id="tamilan"></audio> 
+								<button onClick="anxietytamil()">Tamil</button>
+								<script>
+								  var tamilan = document.getElementById("tamilan");
+								function anxietytamil(){
+									if(tamilan.paused){
+										tamilan.play();
+									}else{
+										tamilan.pause();
+									}
+								  }
+								</script> &nbsp; &nbsp; &nbsp; &nbsp;
+
+								<audio src="englishan.mp3" id="englishan"></audio>
+								<button onClick="anxietyenglish()">English</button>
+								<script>
+								  var englishan = document.getElementById("englishan");
+								function anxietyenglish(){
+									if(englishan.paused){
+										englishan.play();
+									}else{
+										englishan.pause();
+									}
+								  }
+								</script> &nbsp; &nbsp; &nbsp; &nbsp;
+
+								<audio src="HindiAN.mp3" id="hindian"></audio>
+								<button onClick="anxietyhindi()">Hindi</button>
+								<script>
+								  var hindian = document.getElementById("hindian");
+								function anxietyhindi(){
+									if(hindian.paused){
+										hindian.play();
+									}else{
+										hindian.pause();
+									}
+								  }
+								</script> &nbsp; &nbsp; &nbsp; &nbsp;
+
+    						</ul>
+    					</div>
+    				</div>
+    			</div>
+				<div class="col-md-4 col-sm-4">
+    				<div class="block">
+    					<div class="cost">
+    						<h3>Substance abusing</h3>
+    	
+    						<p>Drug addiction, also called substance use disorder, is a disease that affects a person's brain and behavior and leads to an inability to control the use of a legal or illegal drug or medicine. Substances such as alcohol, marijuana and nicotine also are considered drugs. When you're addicted, you may continue using the drug despite the harm it causes.
+
+								Drug addiction can start with experimental use of a recreational drug in social situations, and, for some people, the drug use becomes more frequent. For others, particularly with opioids, drug addiction begins when they take prescribed medicines or receive them from others who have prescriptions.
+								
+								The risk of addiction and how fast you become addicted varies by drug. Some drugs, such as opioid painkillers, have a higher risk and cause addiction more quickly than others.</p>
+    					</div>
+    				
+    					<div class="info">
+    						<ul class="item-list">
+    
+    							
+    						<!--<li><a href="#"><button type="button">Open</button></a></li> -->
+								<br>
+							    <audio src="TamilD.mp3" id="tamild"></audio> 
+								<button onClick="drugtamil()">Tamil</button>
+								<script>
+								  var tamild = document.getElementById("tamild");
+								function drugtamil(){
+									if(tamild.paused){
+										tamild.play();
+									}else{
+										tamild.pause();
+									}
+								  }
+								</script> &nbsp; &nbsp; &nbsp; &nbsp;
+
+								<audio src="englishd.mp3" id="englishd"></audio>
+								<button onClick="drugenglish()">English</button>
+								<script>
+								  var englishd = document.getElementById("englishd");
+								function drugenglish(){
+									if(englishd.paused){
+										englishd.play();
+									}else{
+										englishd.pause();
+									}
+								  }
+								</script> &nbsp; &nbsp; &nbsp; &nbsp;
+
+								<audio src="HindiDrugs.mp3" id="hindid"></audio>
+								<button onClick="drugshindi()">Hindi</button>
+								<script>
+								  var hindid = document.getElementById("hindid");
+								function drugshindi(){
+									if(hindid.paused){
+										hindid.play();
+									}else{
+										hindid.pause();
+									}
+								  }
+								</script> &nbsp; &nbsp; &nbsp; &nbsp;
+
+    						</ul>
+    					</div>
+    				</div>
+    			</div>
+				<div class="col-md-4 col-sm-4">
+    				<div class="block">
+    					<div class="cost">
+    						<h3>Sexual-Assault</h3>
+    	
+    						<p>Regardless of age, gender, or orientation, the impact of sexual violence goes far beyond any physical injuries. The trauma of being raped or sexually assaulted can be shattering, leaving you feeling scared, ashamed, and alone or plagued by nightmares, flashbacks, and other unpleasant memories. It’s important to remember that what you’re experiencing is a normal reaction to trauma. Your feelings of helplessness, shame, defectiveness, and self-blame are symptoms, not reality. No matter how difficult it may seem, with these tips and techniques, you can come to terms with what happened, regain your sense of safety and trust, and learn to heal and move on with your life.Reach out to someone you trust. It's common to think that if you don't talk about your rape, it didn't really happen. But you can't heal when you're avoiding the truth.</p>
+    					</div>
+    				
+    					<div class="info">
+    						<ul class="item-list">
+    
+    							
+    						<!--<li><a href="#"><button type="button">Open</button></a></li> -->
+								<br>
+							    <audio src="TamilSA.mp3" id="tamilsa"></audio> 
+								<button onClick="sexualassaulttamil()">Tamil</button>
+								<script>
+								  var tamilsa = document.getElementById("tamilsa");
+								function sexualassaulttamil(){
+									if(tamilsa.paused){
+										tamilsa.play();
+									}else{
+										tamilsa.pause();
+									}
+								}	
+								</script> &nbsp; &nbsp; &nbsp; &nbsp;
+
+								<audio src="EngSA.mp3" id="EngSA"></audio>
+								<button onClick="engSA()">English</button>
+								<script>
+								  var EngSA = document.getElementById("EngSA");
+								function engSA(){
+									if(EngSA.paused){
+										EngSA.play();
+									}else{
+										EngSA.pause();
+									}
+								  }
+								</script> &nbsp; &nbsp; &nbsp; &nbsp;
+
+								<audio src="HindiSA.mp3" id="hindisa"></audio>
+								<button onClick="sexualassaulthindi()">Hindi</button>
+								<script>
+								  var hindisa = document.getElementById("hindisa");
+								function sexualassaulthindi(){
+									if(hindisa.paused){
+										hindisa.play();
+									}else{
+										hindisa.pause();
+									}
+								  }
+								</script> &nbsp; &nbsp; &nbsp; &nbsp;
+
+    						</ul>
+    					</div>
+    				</div>
+    			</div>
+				<div class="col-md-4 col-sm-4">
+    				<div class="block">
+    					<div class="cost">
+    						<h3>Depression</h3>
+    	
+    						<p>Depression (major depressive disorder) is a common and serious medical illness that negatively affects how you feel, the way you think and how you act. Depression causes feelings of sadness and/or a loss of interest in activities you once enjoyed. It can lead to a variety of emotional and physical problems and can decrease your ability to function at work and at home.Try these coping strategies if you're feeling depressed.Stay in touch-Don't withdraw from life. Socialising can improve your mood. Keeping in touch with friends and family means you have someone to talk to when you feel low. Be more active-Take up some form of exercise. There's evidence that exercise can help lift your mood.Face your fears-Don't avoid the things you find difficult. When people feel low or anxious, they sometimes avoid talking to other people.</p>
+    					</div>
+    				
+    					<div class="info">
+    						<ul class="item-list">
+    
+    							
+    						<!--<li><a href="#"><button type="button">Open</button></a></li> -->
+								<br>
+							    <audio src="TamilSD.mp3" id="TamilSD"></audio> 
+								<button onClick="depressiontamil()">Tamil</button>
+								<script>
+								  var TamilSD = document.getElementById("TamilSD");
+								function depressiontamil(){
+									if(TamilSD.paused){
+										TamilSD.play();
+									}else{
+										TamilSD.pause();
+									}
+								  }
+								</script> &nbsp; &nbsp; &nbsp; &nbsp;
+
+								<audio src="EngSD.mp3" id="EngSD"></audio>
+								<button onClick="engSD()">English</button>
+								<script>
+								  var EngSD = document.getElementById("EngSD");
+								function engSD(){
+									if(EngSD.paused){
+										EngSD.play();
+									}else{
+										EngSD.pause();
+									}
+								  }
+								</script> &nbsp; &nbsp; &nbsp; &nbsp;
+
+								<audio src="HindiSD.mp3" id="hindisd"></audio>
+								<button onClick="depressionhindi()">Hindi</button>
+								<script>
+								  var hindisd = document.getElementById("hindisd");
+								function depressionhindi(){
+									if(hindisd.paused){
+										hindisd.play();
+									}else{
+										hindisd.pause();
+									}
+								  }
+								</script> &nbsp; &nbsp; &nbsp; &nbsp;
+
+    						</ul>
+    					</div>
+    				</div>
+    			</div>
+			</div>
+		</div>
+	</div>
+	
+
+
+    
+    <script type="text/javascript">
+    
+      $(document).ready(function(){
+        $('.toggle-menu').jPushMenu({closeOnClickLink: false});
+        $('.dropdown-toggle').dropdown();
+      });
+      
+    </script>
+    
+    
+    <script type="text/javascript">
+    
+    $(function () {
+  		$.scrollUp({
+    		scrollName: 'scrollUp', // Element ID
+    		topDistance: '300', // Distance from top before showing element (px)
+    		topSpeed: 600, // Speed back to top (ms)
+    		animation: 'fade', // Fade, slide, none
+    		animationInSpeed: 200, // Animation in speed (ms)
+    		animationOutSpeed: 200, // Animation out speed (ms)
+    		activeOverlay: false, // Set CSS color to display scrollUp active point, e.g '#00FFFF'
+    		scrollImg: true,
+  		});
+	});
+    
+    </script>
+
+
+</body>
+
+</html>

@@ -1,0 +1,478 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <title>Heal</title>
+    
+    <meta charset="utf-8" />
+
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/sidebar.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+	<link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,700' rel='stylesheet' type='text/css'>
+	
+	<link rel='shortcut icon' type='image/x-icon' href='favicon.ico' />
+	
+    <script src="js/jquery-1.11.3.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jPushMenu.js"></script>
+    <script src="js/jquery.scrollUp.min.js"></script>
+    
+    <script type="text/javascript">
+		$(window).load(function() {
+			$(".loader").fadeOut("slow");
+		})
+	</script>
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+</head>
+
+<body>
+
+	<div class="loader"></div>
+	
+	<style>
+	
+	.loader {
+	position: fixed;
+	left: 0px;
+	top: 0px;
+	width: 100%;
+	height: 100%;
+	z-index: 9999;
+	background: url('images/page-loader.gif') 50% 50% no-repeat rgb(249,249,249);
+	}
+	
+	</style>
+	
+	<header>   
+        <nav class="navbar-default navbar-static-top" id="navbar-default" style="border-radius:0;">
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle toggle-menu menu-left push-body" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                        <a class="navbar-brand" href="index.html"></a>
+                </div>
+
+                <!-- Collect the nav links, forms, and other content for toggling -->
+                <div class="collapse navbar-collapse cbp-spmenu cbp-spmenu-vertical cbp-spmenu-left" id="bs-example-navbar-collapse-1">
+
+                    <ul class="nav navbar-nav">
+                        <li><a href="index1.html">Home</a></li>
+                        <li><a href="Heal.html">Heal</a></li>
+                        <li><a href="self.html"><span>Self-Improvement</span></a></li>
+                        <li><a href="index.html">Mood Tracker</a></li>
+                        <li><a href="helpline.html">Helpline</a></li>
+						<li><a href="aboutus.html">About Us</a></li>
+
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    
+        
+
+        
+    </header>
+    
+    
+    <div class="container">
+    	<ul class="breadcrumb">
+  			<li><a href="index1.html">Home</a> <span class="divider">/</span></li>
+  			<li class="active">Self-Improvement</li>
+		</ul>
+	</div> 
+
+    <div class="pricing-table">
+    	<div class="container">
+    		<div class="table">
+    			<div class="col-md-4 col-sm-4">
+    				<div class="block">
+    					<div class="cost">
+    						<h3>Self-Confidence</h3>
+    	
+    						<p>Self-esteem is the opinion we have of ourselves.Low self-esteem often begins in childhood. Our teachers, friends, siblings, parents, and even the media send us positive and negative messages about ourselves. Personality can also play a part. Some people are just more prone to negative thinking, while others set impossibly high standards for themselves.If you have low self-esteem or confidence, you may hide yourself away from social situations, stop trying new things, and avoid things you find challenging.To boost your self-esteem, you need to identify the negative beliefs you have about yourself, then challenge them.You may tell yourself you're "too stupid" to apply for a new job, for example, or that "nobody cares" about you.Start to note these negative thoughts and write them on a piece of paper or in a diary. Ask yourself when you first started to think these thoughts.</p>
+    					</div>
+    				
+    					<div class="info">
+    						<ul class="item-list">
+    
+    							
+    						<!--<li><a href="#"><button type="button">Open</button></a></li> -->
+								<br>
+							    <audio src="TamilSC.mp3" id="myAudio1"></audio> 
+								<button onClick="Tamilaudio()">Tamil</button>
+								
+								<script>
+								
+								var myAudio1 = document.getElementById("myAudio1");
+								function Tamilaudio(){
+									if(myAudio1.paused){
+										myAudio1.play();
+									}else{
+										myAudio1.pause();
+									}
+								}
+								</script> &nbsp; &nbsp; &nbsp; &nbsp;
+
+								<audio src="EnglishSC.mp3" id="englishsc"></audio>
+								<button onClick="EngDAaudio()">English</button>
+								<script>
+								var englishsc = document.getElementById("englishsc");
+								function EngDAaudio(){
+									if(englishsc.paused){
+										englishsc.play();
+									}else{
+										englishsc.pause();
+									}
+								  }
+								</script> &nbsp; &nbsp; &nbsp; &nbsp;
+
+								<audio src="HindiSC.mp3" id="hindisc"></audio>
+								<button onClick="HindiDAAudio()">Hindi</button>
+								<script>
+								  var hindisc = document.getElementById("hindisc");
+								function HindiDAAudio(){
+									if(hindisc.paused){
+										hindisc.play();
+									}else{
+										hindisc.pause();
+									}
+								}	
+								</script> &nbsp; &nbsp; &nbsp; &nbsp;
+
+    						</ul>
+    					</div>
+    				</div>
+    			</div>
+				<div class="col-md-4 col-sm-4">
+    				<div class="block">
+    					<div class="cost">
+    						<h3>Public Speaking</h3>
+    	
+    						<p>Public speaking is a crucial skill to master, in your personal and professional life. Most application processes now involve a presentation or video interview, and you will find yourself presenting to a roomful of people throughout your career.It’s all about the idea-The most successful presentations focus on one, coherent idea – something that will change the way your audience thinks, acts and approaches the world.There’s no formula-There are an infinite number of ways to deliver an excellent presentation. Don’t think of public speaking tips as rules; rather they are tools you can choose to utilitise or ignore.Be yourself-The quickest way to engage your audience is to show them who you are. Humour and eye contact are effective tools to make yourself relatable to everyone in the room.Tell a story-Following a narrative will help you relax into your presentation - it's easier to remember a story rather than a list of facts and therefore you'll speak more naturally.</p>
+    					</div>
+    				
+    					<div class="info">
+    						<ul class="item-list">
+    
+    							
+    						<!--<li><a href="#"><button type="button">Open</button></a></li> -->
+								<br>
+							    <audio src="TamilPS.mp3" id="tamilps"></audio> 
+								<button onClick="selfharmtamil()">Tamil</button>
+								<script>
+								  var tamilps = document.getElementById("tamilps");
+								function selfharmtamil(){
+									if(tamilps.paused){
+										tamilps.play();
+									}else{
+										tamilps.pause();
+									}
+								  }
+								</script> &nbsp; &nbsp; &nbsp; &nbsp;
+
+								<audio src="EnglishPS.mp3" id="englishps"></audio>
+								<button onClick="selfharmenglish()">English</button>
+								<script>
+								  var englishps = document.getElementById("englishps");
+								function selfharmenglish(){
+									if(englishps.paused){
+										englishps.play();
+									}else{
+										englishps.pause();
+									}
+								  }
+								</script> &nbsp; &nbsp; &nbsp; &nbsp;
+
+								<audio src="HindiPS.mp3" id="hindips"></audio>
+								<button onClick="selfharmhindi()">Hindi</button>
+								<script>
+								  var hindips = document.getElementById("hindips");
+								function selfharmhindi(){
+									if(hindips.paused){
+										hindips.play();
+									}else{
+										hindips.pause();
+									}
+								  }
+								</script> &nbsp; &nbsp; &nbsp; &nbsp;
+
+    						</ul>
+    					</div>
+    				</div>
+    			</div>
+				<div class="col-md-4 col-sm-4">
+    				<div class="block">
+    					<div class="cost">
+    						<h3>Time Management</h3>
+    	
+    						<p>Time management is planning how to efficiently use and deliberately control the time you spend to maximize productivity. In short, get more done in less time. Other upsides include:Better work quality,Less stress,More time to work on strategic or creative projects,Less procrastination,More self-confidence.Know how you’re spending your time-If your productivity is measured by output over a certain period, lost time can mean dollars out the window. Just like creating a budget, you have to track what you’re actually spending your time on to reveal any areas or habits that are blocking you from reaching your goals.Stick to a daily schedule-Go beyond “I have eight hours to do XYZ.” Create a daily schedule with allotted time blocks for different tasks. Sticking to it is the key to success.Prioritize-To-do lists can be productivity lifesavers. But if you’re not careful, they can get so big and overwhelming that you don’t know where to start. </p>
+    					</div>
+    				
+    					<div class="info">
+    						<ul class="item-list">
+    
+    							
+    						<!--<li><a href="#"><button type="button">Open</button></a></li> -->
+								<br>
+							    <audio src="TamilS-R.mp3" id="tamiltm"></audio> 
+								<button onClick="anxietytamil()">Tamil</button>
+								<script>
+								  var tamiltm = document.getElementById("tamiltm");
+								function anxietytamil(){
+									if(tamiltm.paused){
+										tamiltm.play();
+									}else{
+										tamiltm.pause();
+									}
+								  }
+								</script> &nbsp; &nbsp; &nbsp; &nbsp;
+
+								<audio src="EnglishS-R.mp3" id="englishtm"></audio>
+								<button onClick="anxietyenglish()">English</button>
+								<script>
+								  var englishtm = document.getElementById("englishtm");
+								function anxietyenglish(){
+									if(englishtm.paused){
+										englishtm.play();
+									}else{
+										englishtm.pause();
+									}
+								  }
+								</script> &nbsp; &nbsp; &nbsp; &nbsp;
+
+								<audio src="HindiS-R.mp3" id="hinditm"></audio>
+								<button onClick="anxietyhindi()">Hindi</button>
+								<script>
+								  var hinditm = document.getElementById("hinditm");
+								function anxietyhindi(){
+									if(hinditm.paused){
+										hinditm.play();
+									}else{
+										hinditm.pause();
+									}
+								  }
+								</script> &nbsp; &nbsp; &nbsp; &nbsp;
+
+    						</ul>
+    					</div>
+    				</div>
+    			</div>
+				<div class="col-md-4 col-sm-4">
+    				<div class="block">
+    					<div class="cost">
+    						<h3>Self-Reflection</h3>
+    	
+    						<p>Socrates is quoted as saying, “The unexamined life is not worth living.” The goal of looking inward is to learn more about yourself and rejuvenate your soul. Many people turn to this approach when they are in a funk, feeling unhappy and/or unsatisfied with their everyday life.Although soul searching can be a useful way to get out of a rut, you should also periodically turn inward even when you are feeling satisfied with the way things are. This can help you maintain feelings of peace and happiness.Pay Attention to Your Immediate Situation-People have the natural habit of focusing on the future and the past while neglecting to live in the present moment.Think About Your Future Plans-Now start reflecting on where you want to be; setting realistic goals can help you generate motivation for change. Stay away from thinking about things—a bigger house, a newer car—and instead focus on self-fulfillment.The practice itself is all about learning, looking back on the day to contemplate yourself.</p>
+    					</div>
+    				
+    					<div class="info">
+    						<ul class="item-list">
+    
+    							
+    						<!--<li><a href="#"><button type="button">Open</button></a></li> -->
+								<br>
+							    <audio src="TamilSR.mp3" id="tamilsr"></audio> 
+								<button onClick="drugtamil()">Tamil</button>
+								<script>
+								  var tamilsr = document.getElementById("tamilsr");
+								function drugtamil(){
+									if(tamilsr.paused){
+										tamilsr.play();
+									}else{
+										tamilsr.pause();
+									}
+								  }
+								</script> &nbsp; &nbsp; &nbsp; &nbsp;
+
+								<audio src="EnglishSR.mp3" id="englishsr"></audio>
+								<button onClick="drugenglish()">English</button>
+								<script>
+								  var englishsr = document.getElementById("englishsr");
+								function drugenglish(){
+									if(englishsr.paused){
+										englishsr.play();
+									}else{
+										englishsr.pause();
+									}
+								  }
+								</script> &nbsp; &nbsp; &nbsp; &nbsp;
+
+								<audio src="HindiSR.mp3" id="hindisr"></audio>
+								<button onClick="drugshindi()">Hindi</button>
+								<script>
+								  var hindisr = document.getElementById("hindisr");
+								function drugshindi(){
+									if(hindisr.paused){
+										hindisr.play();
+									}else{
+										hindisr.pause();
+									}
+								  }
+								</script> &nbsp; &nbsp; &nbsp; &nbsp;
+
+    						</ul>
+    					</div>
+    				</div>
+    			</div>
+				<div class="col-md-4 col-sm-4">
+    				<div class="block">
+    					<div class="cost">
+    						<h3>Procrastination</h3>
+    	
+    						<p>Procrastination is a challenge we have all faced at one point or another.During our more productive moments, when we temporarily figure out how to stop procrastinating, we feel satisfied and accomplished.This is what happens during the moment when we finally move beyond procrastination and take action. For example, let's say you have a report to write. You've known about it for weeks and continued to put it off day after day. You experience a little bit of nagging thinking about this paper you have to write, but not enough to do anything about it. Then,the day before the deadline, the future consequences turn into present consequences, and you write that report hours before it is due. The pain of procrastinating finally escalated and you crossed the “Action Line”.If we want to stop procrastinating, then we need to make it as easy as possible for the Present Self to get started and trust that motivation and momentum will come after we begin.</p>
+    					</div>
+    				
+    					<div class="info">
+    						<ul class="item-list">
+    
+    							
+    						<!--<li><a href="#"><button type="button">Open</button></a></li> -->
+								<br>
+							    <audio src="TamilP.mp3" id="tamilp"></audio> 
+								<button onClick="sexualassaulttamil()">Tamil</button>
+								<script>
+								  var tamilp = document.getElementById("tamilp");
+								function sexualassaulttamil(){
+									if(tamilp.paused){
+										tamilp.play();
+									}else{
+										tamilp.pause();
+									}
+								}	
+								</script> &nbsp; &nbsp; &nbsp; &nbsp;
+
+								<audio src="EnglishP.mp3" id="Englishp"></audio>
+								<button onClick="engSA()">English</button>
+								<script>
+								  var Englishp = document.getElementById("Englishp");
+								function engSA(){
+									if(Englishp.paused){
+										Englishp.play();
+									}else{
+										Englishp.pause();
+									}
+								  }
+								</script> &nbsp; &nbsp; &nbsp; &nbsp;
+
+								<audio src="HindiP.mp3" id="hindip"></audio>
+								<button onClick="sexualassaulthindi()">Hindi</button>
+								<script>
+								  var hindip = document.getElementById("hindip");
+								function sexualassaulthindi(){
+									if(hindip.paused){
+										hindip.play();
+									}else{
+										hindip.pause();
+									}
+								  }
+								</script> &nbsp; &nbsp; &nbsp; &nbsp;
+
+    						</ul>
+    					</div>
+    				</div>
+    			</div>
+				<div class="col-md-4 col-sm-4">
+    				<div class="block">
+    					<div class="cost">
+    						<h3>Forgiveness</h3>
+    	
+    						<p>Forgiveness means different things to different people. But in general, it involves an intentional decision to let go of resentment and anger. The act that hurt or offended you might always be with you. But working on forgiveness can lessen that act's grip on you.It can help free you from the control of the person who harmed you. Sometimes, forgiveness might even lead to feelings of understanding, empathy and compassion for the one who hurt you.Forgiveness doesn't mean forgetting or excusing the harm done to you. It also doesn't necessarily mean making up with the person who caused the harm.Being hurt by someone, particularly someone you love and trust, can cause anger, sadness and confusion. If you dwell on hurtful events or situations, grudges filled with resentment and hostility can take root.Some people are naturally more forgiving than others. But even if you tend to hold a grudge, almost anyone can learn to be more forgiving.</p>
+    					</div>
+    				
+    					<div class="info">
+    						<ul class="item-list">
+    
+    							
+    						<!--<li><a href="#"><button type="button">Open</button></a></li> -->
+								<br>
+							    <audio src="TamilF.mp3" id="Tamilf"></audio> 
+								<button onClick="depressiontamil()">Tamil</button>
+								<script>
+								  var Tamilf = document.getElementById("Tamilf");
+								function depressiontamil(){
+									if(Tamilf.paused){
+										Tamilf.play();
+									}else{
+										Tamilf.pause();
+									}
+								  }
+								</script> &nbsp; &nbsp; &nbsp; &nbsp;
+
+								<audio src="EnglishF.mp3" id="englishf"></audio>
+								<button onClick="engSD()">English</button>
+								<script>
+								  var englishf = document.getElementById("englishf");
+								function engSD(){
+									if(englishf.paused){
+										englishf.play();
+									}else{
+										englishf.pause();
+									}
+								  }
+								</script> &nbsp; &nbsp; &nbsp; &nbsp;
+
+								<audio src="HindiF.mp3" id="hindif"></audio>
+								<button onClick="depressionhindi()">Hindi</button>
+								<script>
+								  var hindif = document.getElementById("hindif");
+								function depressionhindi(){
+									if(hindif.paused){
+										hindif.play();
+									}else{
+										hindif.pause();
+									}
+								  }
+								</script> &nbsp; &nbsp; &nbsp; &nbsp;
+
+    						</ul>
+    					</div>
+    				</div>
+    			</div>
+			</div>
+		</div>
+	</div>
+	
+
+
+    
+    <script type="text/javascript">
+    
+      $(document).ready(function(){
+        $('.toggle-menu').jPushMenu({closeOnClickLink: false});
+        $('.dropdown-toggle').dropdown();
+      });
+      
+    </script>
+    
+    
+    <script type="text/javascript">
+    
+    $(function () {
+  		$.scrollUp({
+    		scrollName: 'scrollUp', // Element ID
+    		topDistance: '300', // Distance from top before showing element (px)
+    		topSpeed: 600, // Speed back to top (ms)
+    		animation: 'fade', // Fade, slide, none
+    		animationInSpeed: 200, // Animation in speed (ms)
+    		animationOutSpeed: 200, // Animation out speed (ms)
+    		activeOverlay: false, // Set CSS color to display scrollUp active point, e.g '#00FFFF'
+    		scrollImg: true,
+  		});
+	});
+    
+    </script>
+
+
+</body>
+
+</html>
